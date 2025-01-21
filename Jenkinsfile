@@ -1,10 +1,7 @@
 pipeline {
     agent any
 
-    triggers {
-        pollSCM('* * * * *')
-    }
-
+    
     stages {
         stage('Detectar commits en mi repositorio') {
             steps {
